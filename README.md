@@ -72,3 +72,6 @@ HEAD is now at fd1de3a 1
 
 이후 `git status`를 해보면 아무 변경사항이 없다고 뜬다. 이때, working directory, index, repository 모두 'init'이라는 내용을 담고 있게 된다.
 
+
+
+궁금증: `git reset --hard ORIG_HEAD`를 하여 바로 직전 단계로 돌아갈 순 있지만, 한 번 더 사용해도 그 전으로 돌아가지지는 않는다. `git reflog`를 하여 커밋 해시를 찾아 돌아가는 방법 외로, 두 번 이상 돌아가는 명령어는 없을까?
