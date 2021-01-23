@@ -63,12 +63,12 @@ index b1b7161..1116dba 100644
 
 ### 3. `git reset --hard`
 
-현재 커밋을 하기 전이지만 수정한 모든 내용을 취소하고 지난 커밋으로 돌아가고 싶다면 쓰기 좋은 명령어이다. 또한 뒤에 커밋 해시 없이
+현재 커밋을 하기 전이지만 수정한 모든 내용을 취소하고 지난 커밋으로 돌아가고 싶다면 쓰기 좋은 명령어이다. 또한 뒤에 커밋 해시 없이 `git reset --hard`만을 사용한다면, 현재 수정된 (git add 여부와 관계 없이) 모든 내용을 없애고 최신 커밋으로 돌아간다.
 
 ``` 
 $ git reset --hard
 HEAD is now at fd1de3a 1
 ```
 
-만을 사용한다면, 현재 수정된 (git add 여부와 관계 없이) 모든 내용을 없애고 최신 커밋으로 돌아간다. 이후 `git status`를 해보면 아무 변경사항이 없다고 뜬다. 이때, working directory, index, repository 모두 'init'이라는 내용을 담고 있게 된다.
+이후 `git status`를 해보면 아무 변경사항이 없다고 뜬다. 이때, working directory, index, repository 모두 'init'이라는 내용을 담고 있게 된다.
 
